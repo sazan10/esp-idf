@@ -17,4 +17,5 @@ jobs:
     - name: Build C Code
       run: |
         ./install.sh
+        ./export.sh
         idf.py build
