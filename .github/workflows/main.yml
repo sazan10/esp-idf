@@ -14,8 +14,10 @@ jobs:
       with:
         ref: 8760e6d2a7e19913bc40675dd71f374bcd51b0ae
 
-    - name: Build C Code
+    - name: Run install.sh
       run: |
         ./install.sh
-        . ./export.sh
-        idf.py --list-targets
+    - name: Run export.sh        
+      run: . ./export.sh
+    - name: Run build
+      run: idf.py build
