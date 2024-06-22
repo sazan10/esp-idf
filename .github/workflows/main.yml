@@ -16,6 +16,6 @@ jobs:
 
     - name: Build C Code
       run: |
-        sudo -S ./install.sh
-        sudo -S source ./export.sh
+        ./install.sh
+        . ./export.sh
         idf.py build
