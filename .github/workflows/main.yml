@@ -18,6 +18,6 @@ jobs:
       run: |
         ./install.sh
     - name: Run export.sh        
-      run: . ./export.sh
-    - name: Run build
-      run: idf.py build
+      run: | 
+        . ./export.sh
+        idf.py build
