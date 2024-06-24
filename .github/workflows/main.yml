@@ -25,5 +25,5 @@ jobs:
         cd /home/runner/work/esp-idf/esp-idf/examples/get-started/hello_world
         ls
         idf.py set-target esp32
-        idf.py menuconfig
+        idf.py config
         idf.py build
