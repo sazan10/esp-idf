@@ -22,8 +22,9 @@ jobs:
     - name: Run export.sh        
       run: | 
         . ./export.sh
-        idf.py set-target esp32
-        idf.py menuconfig
         cd /home/runner/work/esp-idf/esp-idf/examples
         ls
+        idf.py set-target esp32
+        idf.py menuconfig
+
         idf.py build
