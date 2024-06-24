@@ -22,7 +22,6 @@ jobs:
     - name: Run export.sh        
       run: | 
         . ./export.sh
-        cd ~/esp/hello_world
         idf.py set-target esp32
         idf.py menuconfig
         idf.py build
